@@ -2,8 +2,8 @@
 #include "GameOfLife.h"
 
 
-void main(void) {
+int main(void) {
     GameOfLife gol;
-
     gol.Run();
+    return 0;
 }

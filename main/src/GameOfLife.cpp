@@ -7,6 +7,7 @@ GameOfLife::GameOfLife() : m_hei(0), m_wid(0) {}
 
 void GameOfLife::Initialize() {
   Utils::GetWindowSize(m_wid, m_hei);
+  std::cout << "width: " << m_wid << ", height: " << m_hei << std::endl;
   m_board.resize(m_wid * m_hei);
   for(int i = 0; i < m_wid * m_hei; ++i) {
     m_board[i] = false;
@@ -70,7 +71,7 @@ void GameOfLife::Draw() {
       str[i] = 'X';
     }
   }
-  std::cout << str;
+  std::cout << str << std::endl;
 }
 
 void GameOfLife::Clear() {
